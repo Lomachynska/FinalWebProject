@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                customgray: '9B9997',
+                customblack: '000000',
+                customblacktwo: '1D1613',
+                custombeige: 'A87B62',
+                
+              }
+            }
+          }
+        }
+      </script>
+
+
+</head>
+
+<body>
+
+    <div id="menulogo" class="flex items-center gap-4 pt-6">
+        <form class="flex max-w-sm mx-auto">   
+            <label for="simple-search" class="sr-only">Search</label>
+            <div class="relative w-full">
+                <div class="absolute inset-y-0 start-0 flex justify-start items-center ps-3 pointer-events-none">
+                    <img src="/img/search.svg" alt="search" class="w-6 h-6">
+                </div>
+                <input type="text" id="simple-search" class="bg-gray-50 text-customgray text-sm rounded-lg block w-full ps-10 p-2.5  dark:bg-gray-300 dark:placeholder-gray-300 dark:text-white" placeholder="Type here to search" required/>
+            </div>
+        </form>
+
+        <div class="w-66 h-66 rounded max-w-sm mx-auto">
+            <img src="/img/logo.svg" alt="loga">
+        </div>
+
+        <ul class="text-customblacktwo rounded max-w-sm mx-auto">
+            <a href="#" class="w-38 h-10">Login</a>
+            <a href="#" class="w-38 h-10">Cart</a>
+            <a href="#" class="w-9 h-10">0</a>
+        </ul>
+    </div>
+
+    <div id="navbar" class="rounded max-w-sm mx-auto pt-4">
+        <nav class="flex justify-items-center">
+            <ul class="flex p-2 md:p-0 mt-4 font-medium border border-gray-500 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                  <a href="#" class="text-nowrap text-customblacktwo block py-2 px-3" aria-current="page">What`s new</a>
+                </li>
+                <li>
+                    <a href="#" class="text-customblacktwo block py-2 px-3" aria-current="page">Choker</a>
+                </li>
+                <li>
+                    <a href="#" class="text-customblacktwo block py-2 px-3" aria-current="page">Necklaces</a>
+                </li>
+                <li>
+                    <a href="#" class="text-customblacktwo block py-2 px-3" aria-current="page">Rings</a>
+                </li>
+                <li>
+                    <a href="#" class="text-customblacktwo block py-2 px-3" aria-current="page">Earrings</a>
+                </li>
+              </ul>
+        </nav>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
