@@ -9,36 +9,64 @@
         tailwind.config = {
           theme: {
             extend: {
+                screens: {
+                    'desktop': '1366px',
+                },
+                fontFamile: {
+                    'cormorant-garamond': ['Cormarant Garamod', 'serif'],
+                },
+                minWidth: {
+                    '320': '320px',
+                    '768': '768px',
+                    '1366': '1366px',
+                },
+                width: {
+                    '25': '25px',
+                    '52': '52px',
+                    '66': '6px',
+                },
+                height: {
+                    '18': '18px',
+                    '52': '52px',
+                    '66': '66px',
+                },
+                padding: {
+                    '15':'15px',
+                    '30':'30px',
+                    '45':'45px',
+                },
+                lineHeight: {
+                    '130':'1.3',
+                },
               colors: {
                 clifford: '#da373d',
                 customgray: '9B9997',
                 customblack: '000000',
                 customblacktwo: '1D1613',
                 custombeige: 'A87B62',
-                
+                custombeigeTwo: 'F6F5F4',
+                customwhite: 'FFFFFF',
               }
             }
           }
         }
       </script>
-
-
 </head>
 
 <body>
 
-    <div id="menulogo" class="flex items-center gap-4 pt-6">
+    <div id="menulogo" class="flex items-center gap-4 pt-6 border-b-2">
         <form class="flex max-w-sm mx-auto">   
             <label for="simple-search" class="sr-only">Search</label>
             <div class="relative w-full">
                 <div class="absolute inset-y-0 start-0 flex justify-start items-center ps-3 pointer-events-none">
                     <img src="/img/search.svg" alt="search" class="w-6 h-6">
                 </div>
-                <input type="text" id="simple-search" class="bg-gray-50 text-customgray text-sm rounded-lg block w-full ps-10 p-2.5  dark:bg-gray-300 dark:placeholder-gray-300 dark:text-white" placeholder="Type here to search" required/>
+                <input type="text" id="simple-search" class="bg-gray-30 text-customgray text-sm rounded-lg block w-full ps-10 p-2.5  dark:text-white w-140 h-10" placeholder="Type here to search" required/>
             </div>
         </form>
 
-        <div class="w-66 h-66 rounded max-w-sm mx-auto">
+        <div class="rounded max-w-sm mx-auto">
             <img src="/img/logo.svg" alt="loga">
         </div>
 
@@ -50,7 +78,7 @@
     </div>
 
     <div id="navbar" class="rounded max-w-sm mx-auto pt-4">
-        <nav class="flex justify-items-center">
+        <nav class="flex justify-items-center customblacktwo">
             <ul class="flex p-2 md:p-0 mt-4 font-medium border border-gray-500 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <a href="#" class="text-nowrap text-customblacktwo block py-2 px-3" aria-current="page">What`s new</a>
@@ -69,14 +97,127 @@
                 </li>
               </ul>
         </nav>
-
-
     </div>
 
+    <div class="pt-4 float-none relative">
+        <div class="absolute flex inset-y-0 flex justify-start items-center ps-20">
+            <p class="inline-grid rmorant-garamond text-4xl pl-12 text-white">PERFECTION</p>
+            <p class="inline-grid rmorant-garamond mt-12 text-white">made to be yours</p>
+        </div>
+        <img class="bg-local" style="background-image: url(mainlogo)" src="/img/mainlogo.jpg">
+    </div>
 
+    <div id="NewInShopNow">
+        <div class="flex justify-items-center rmorant-garamond text-customblacktwo">
+            <p class="pt-4 text-3xl max-w-sm mx-auto mt-12 cormorant-garamond tracking-tight">New In</p>
+        </div>
+        <div class="flex justify-between">
+            <img src="/img/Vector 3.svg" alt="right arrow">
+            <img src="/img/Vector 3.1.svg" alt="left arrow">
+        </div>
+        <div class="flex justify-center">
+            <p class="pt-5 max-w-sm mx-auto">Shop Now</p>
+        </div>
+        <div class="flex justify-center">
+            <img src="/img/imgshop/Line 2.png" alt="line">
+        </div>
+    </div>
 
+    <div id="shoplenta" class="my-8">
+        <div class="flex justify-between">
+            <div class="grid justify-items-center">
+                <img class="float-none" src="/img/imgshop/purple-gemstone-necklace-desktop.jpg" alt="purle">
+                <p class="flex">Necklace with amethyst</p>
+                <p class="font-bold">$ 145</p>
+            </div>
+            <div class="grid justify-items-center">
+                <img src="/img/imgshop/layered-choker-necklace-desktop.jpg" alt="layered">
+                <p class="">Layered сhoker</p>
+                <p class="font-bold">$ 115</p>
+            </div>
+            <div class="grid justify-items-center">
+                <img src="/img/imgshop/dainty-gold-necklace-desktop.jpg" alt="dainty">
+                <p class="">Gold chain</p>
+                <p class="font-bold">$ 215</p>
+            </div>
+            <div class="grid justify-items-center">
+                <img src="/img/imgshop/galaxy-earrings-desktop-1.jpg" alt="galaxy">
+                <p class="">Galaxy earrings</p> 
+                <p class="font-bold">$ 95</p>
+            </div>
+        </div>
+    </div>
 
+    <div id="pages">
+        <div class="grid justify-items-center m-12">
+            <img src="/img/imgshop/Group 5.png" alt="group">
+        </div>
+    </div>
 
+    <div id="Blog" class="grid justify-items-center ">
+        <p class="text-2xl text-customblacktwo cormorant-garamond">Blog</p>
+        <p class="mt-6 mr-4">Read All</p>
+        <img src="/img/imgshop/Line 2.4.png" alt="line2.4" class="flex justify-center">
+    </div>
+
+    <div class="flex ml-20 mt-8">
+        <div class="">
+            <img class="mt-6 grid grid-cols-2 place-content-stretch" src="/img/imgbl/jess-harper-sunday-b5NwJj4bVcg-unsplash (1)-blog-care-desktop.jpg" alt="jess">
+            <img class="mt-6 grid grid-cols-2 place-content-stretch" src="/img/imgbl/Rectangle 2.3.jpg" alt="Rectangle">
+        </div>
+        <div class="">
+            <img class="mt-6 grid grid-cols-2 place-content-stretch" src="/img/imgbl/Rectangle 2.3.jpg" alt="Rectangle">
+            <img class="mt-6 grid grid-cols-2 place-content-stretch" src="/img/imgbl/alex-holyoake-Cg0dPdmy5dE-unsplash-blog-power-desktop.jpg" alt="alex">
+        </div>
+        <div class="flex mr-4 ml-10 relative">
+            <img class="grid grid-cols-2 place-content-stretch" src="/img/imgbl/alve-odonnell-RP4_f4zu_8A-unsplash-blog-trends-desktop.jpg" alt="alve">
+            <img class="grid grid-cols-2 place-content-stretch absolute bottom-0 right-0" src="/img/imgbl/Rectangle 2.3.jpg" alt="Rectangle">
+        </div>
+    </div>
+
+    <div class="mt-12 flex flex-col items-center">
+        <p class="customblacktwo cormorant-garamond text-2xl">Frequently asked questions</p>
+    </div>
+
+        <div id="container" class="grid grid-template-column px-8 border-2">
+            <div class="">
+                <p>What materials are the jewellery made of?</p>
+                <div class="flex flex-row-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+                        <path d="M16 9L8.5 1L1 9" stroke="#A87B62"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="border-b-2">
+                <p>Our jewellerry is made of solid gold, silver or leather. Also, some</p>
+                <p>jewellery contains precious and semiprecious stones and crystals.</p>
+            </div>
+            <div class="grid gap-8 border-b-2">
+                <p>Which countries do you deliver to?</p>
+                <div class="flex flex-row-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+                        <path d="M1 1L8.5 9L16 1" stroke="#A87B62"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="grid gap-8 border-b-2">
+                <p>What are the payment methods?</p>
+                <div class="flex flex-row-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+                        <path d="M1 1L8.5 9L16 1" stroke="#A87B62"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="grid gap-8">
+                <p>Can I return the jewellery if it didn’t fit me?</p>
+                <div class="flex flex-row-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+                        <path d="M1 1L8.5 9L16 1" stroke="#A87B62"/>
+                        </svg>
+                </div>
+
+            </div>
+        </div>
 
 
 
